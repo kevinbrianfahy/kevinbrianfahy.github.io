@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kevin Fahy, Web Developer</title>
+    <meta charset="UTF-8">
+    <script>
+    var vid = document.getElementById("myVideo");
+    vid.autoplay = false;
+    vid.load();
+</script>
+    <link type="text/css" rel="stylesheet" href="portfolioA.css">
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class = "wrap">
+        <header>
+            <h1>Kevin Fahy</h1>
+                <nav>
+                    <ul>
+                      <li><a href="resume.html">resum&eacute;</a></li>
+                      <li><a href="contact.html">contact</a></li>
+                      <li><a href="blog.html">blog</a></li>
+                      <li><a href="projects.html">projects</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <center><video width="640" height="480" controls="controls" type="video/mp4">
+              <source src="me.mp4" autostart="false">Your browser does not support the video tag.
+            </video></center>
+            <div class="videotext">
+                <p>Thanks for checking out my portfolio website! Enjoy the video above to get to know me a little more personally, or just skip right to the links at the top of the page to get right to the nitty gritty!</p>
+                <p></p>
+            </div>
+        </main>
+
+
+<!--       <div class = "video">
+              <embed id="myVideo" type="video/mp4" src="me.mp4" width ="640" height = "480" autoplay ="false" autostart="false" autoplay="0" autostart="0">
+            </div>-->
+
+        <!--<aside class="waterfall">
+        </aside>
+        <aside class="sidebar">
+        </aside>-->
+      <!--  <script src='jquery-1.11.3.min.js'></script>
+        <script src='effects.js'></script>-->
+    </div>
+  </body>
+</html>

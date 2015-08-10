@@ -1,0 +1,224 @@
+
+html, body, header, h1, h2, h3, h4, ul, li, a, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, 'Playball';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+html {
+}
+body {
+  padding: 10px;
+  background: black;
+}
+.wrap {
+  background: white;
+}
+header {
+  height: 150px;
+  background: linear-gradient(180deg, #ffffff 70%, #DB94FF);
+
+}
+main {
+  background: #DB94FF;
+  margin: 0 20px 20px 20px;
+  padding: 30px;
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+h1 {
+  color: #000000;
+  text-align: center;
+  font-family: 'Playball', cursive;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: normal;
+}
+video {
+v
+}
+nav {
+  text-align: center;
+}
+nav li {
+    display: inline;
+    padding: 5px 25px 5px 25px;
+    border: 1px solid #CC66FF;
+    background: white;
+    box-shadow:3px 3px 3px #000;
+}
+a {
+  font-family: arial;
+  font-weight: bold;
+}
+.waterfall {
+
+}
+.video {
+
+}
+.sidebar {
+
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+h2 {
+  color: #000000;
+  font-family: 'Playball', cursive;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: normal;
+  padding-left:120px;
+}
+.resume {
+  width: 800px;
+  margin:0 auto 0 auto;
+}
+.resume img {
+
+ border-top: 1px solid black;
+ box-shadow: 2px 2px 2px black;
+}
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+.socialmedia {
+  position:absolute;
+  left: 500px;
+  top: 50px;
+}
+.socialmedia li {
+    padding: 5px;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.socialmedia img {
+  height: 50px;
+  width: 50px;
+}
+form {
+  padding: 10px;
+  width: 815px;
+  border-top:1px solid black;
+  box-shadow: 3px 3px 3px black;
+  background: url(images/background/background-814621_1280.jpg);
+  margin-left: 100px;
+}
+input[type=submit] {
+  display:block;
+  margin:5px 10px 5px 10px;
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  background: #B3B3B3;
+  box-shadow: 1px 1px 15px 0 #1A1A1A;
+}
+input[type=text] {
+  display:block;
+  margin:5px 10px 5px 10px;
+  width: 60%;
+  border:1px solid black;
+  font-size: 20px;
+  padding: 7px;
+  box-shadow: inset 1px 1px 25px 5px #1A1A1A;
+  background: #B3B3B3;
+}
+textarea {
+  margin: 5px 10px 0 10px;
+  width:750px;
+  height: 400px;
+  padding: 7px;
+  box-shadow: inset 3px 3px 250px 15px #1A1A1A;
+  border: 1px solid black;
+  font-size:24px;
+  background: #B3B3B3;
+}
+
+
+input[placeholder] {
+  color: white;
+  padding-left: 30px;
+}
+textarea[placeholder] {
+  color: white;
+  padding: 20px 0 0 40px
+}
+::-webkit-input-placeholder {
+  color: white;
+}
+:-moz-placeholder {
+  color: white;
+}
+::-moz-placeholder {
+  color: white;
+}
+:-ms-input-placeholder {
+  color: white;
+}
+.selfpic {
+  width: 220px;
+  position: absolute;
+  top: 200px;
+  right: 45px;
+}
+.selfpic img{
+width: 220px;
+height: 150px;
+border: 1px solid black;
+}
+.selfpic p {
+  text-align: center;
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+.blog {
+
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+.projects {
+  text-align: center;
+}
+.projects li {
+  display: inline-table;
+  margin: 10px;
+}
+.projects img {
+  height: 150px;
+  width: 150px;
+}
+.descriptions {
+  margin: 40px;
+}
+h3 {
+  margin-bottom: 5px;
+}
+p {
+  margin-bottom: 10px;
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+.effects {
+  background: #000000;
+}
+
+.name {
+  color: #ffffff;
+}
