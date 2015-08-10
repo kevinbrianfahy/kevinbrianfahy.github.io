@@ -12,18 +12,12 @@ html {
 }
 body {
   padding: 10px;
-  background: black;
-}
-.wrap {
-  background: white;
+  background: linear-gradient(0deg, #DB94FF 70%, #ffffff);
 }
 header {
   height: 150px;
-  background: linear-gradient(180deg, #ffffff 70%, #DB94FF);
-
 }
 main {
-  background: #DB94FF;
   margin: 0 20px 20px 20px;
   padding: 30px;
 }
@@ -40,9 +34,6 @@ h1 {
   font-style: normal;
   font-weight: normal;
 }
-video {
-v
-}
 nav {
   text-align: center;
 }
@@ -57,14 +48,12 @@ a {
   font-family: arial;
   font-weight: bold;
 }
-.waterfall {
-
+.videotext {
+  width: 800px;
+  margin: 35px auto 0 auto;
 }
-.video {
-
-}
-.sidebar {
-
+.videotext p {
+  color: white;
 }
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -107,12 +96,21 @@ h2 {
   height: 50px;
   width: 50px;
 }
+.socialmedia li:nth-child(5) {
+  padding: 5px 25px 5px 25px;
+  border: 1px solid #CC66FF;
+  background: white;
+  box-shadow:3px 3px 3px #000;
+  position: absolute;
+  top: 10px;
+  left: 270px;
+}
 form {
   padding: 10px;
   width: 815px;
   border-top:1px solid black;
   box-shadow: 3px 3px 3px black;
-  background: url(images/background/background-814621_1280.jpg);
+  background: url(images/background-814621_1280.jpg);
   margin-left: 100px;
 }
 input[type=submit] {
@@ -191,6 +189,15 @@ border: 1px solid black;
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
+.home {
+  padding: 5px 25px 5px 25px;
+  border: 1px solid #CC66FF;
+  background: white;
+  box-shadow:3px 3px 3px #000;
+  position: absolute;
+  top: 41px;
+  left: 370px;
+}
 .projects {
   text-align: center;
 }
