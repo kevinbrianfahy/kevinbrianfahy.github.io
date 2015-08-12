@@ -21,6 +21,7 @@ main {
   margin: 0 20px 20px 20px;
   padding: 30px;
 }
+
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -181,6 +182,7 @@ textarea[placeholder] {
   position: absolute;
   top: 200px;
   right: 45px;
+  border: 1px solid black;
 }
 .selfpic img{
 width: 220px;
@@ -242,10 +244,45 @@ h3 {
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
+.curtaintop, .curtainleft, .curtainright, .seats {
+  display: none;
+}
+.curtaintop img {
+  width: 100%;
+  display: block;
+  opacity: .9;
+}
+.curtaintop {
+  width: 1346px;
+  position: absolute;
+  top: 0px;
+  }
+.curtainleft img {
+  height: 480px;
+  }
+.curtainleft {
+  position: absolute;
+  top: 215px;
+  left: 0px;
+}
+.curtainright img {
+  height: 480px;
+}
+.curtainright {
+  position: absolute;
+  top: 215px;
+  right: 0px;
+}
+.seats img {
+  width: 100%;
+  display: block;
+}
+.seats {
+  width: 1346px;
+  position: absolute;
+  bottom: -215px;
+}
 .effects {
   background: #000000;
-}
-
-.name {
-  color: #ffffff;
+  nav
 }
