@@ -19,7 +19,7 @@
                 </nav>
         </header>
         <main>
-            <center><video width="640" height="480" controls type="video/mp4">
+            <center><video id="myvid" width="640" height="480" controls type="video/mp4">
               <source src="me.mp4" autostart="false">Your browser does not support the video tag.
             </video></center>
             <div class="videotext">
@@ -49,6 +49,12 @@
         </div>
         <div class="curtaintop">
           <img src ="images/curtaintop.png">
+        </div>
+        <div id="playbutton">
+          <input type="submit" value="Play">
+        </div>
+        <div id="exitbutton">
+          <input type="submit" value="Exit">
         </div>
         <script src='jquery-1.11.3.min.js'></script>
       <script src='effects.js'></script>
