@@ -20,6 +20,7 @@ header {
 main {
   margin: 0 20px 20px 20px;
   padding: 30px;
+  border: 2px solid black;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -79,13 +80,19 @@ h2 {
   padding-left:120px;
 }
 .resume {
+  padding: 0;
+  background: url(images/paper.png);
+  height: 1050px;
   width: 800px;
   margin:0 auto 0 auto;
+  border-top: 1px solid black;
+  box-shadow: 5px 5px 5px black;
 }
 .resume img {
+  opacity: .7;
+  height: 1050px;
+  width: 800px;
 
- border-top: 1px solid black;
- box-shadow: 5px 5px 5px black;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -118,10 +125,12 @@ h2 {
 }
 form {
   padding: 10px;
-  width: 815px;
+  /*width: 815px;*/
+  width: 65%;
   border-top:1px solid black;
   box-shadow: 3px 3px 3px black;
   background: url(images/background-814621_1280.jpg);
+  /*float: left;*/
   margin-left: 100px;
 }
 input[type=submit] {
@@ -145,13 +154,16 @@ input[type=text] {
   background: #B3B3B3;
 }
 textarea {
-  margin: 5px 10px 0 10px;
-  width:750px;
-  height: 400px;
+  /margin: 5px 10px 0 10px;
+  /*width:750px;*/
+  width: 93%;
+  /*height: 400px;*/
+  height: 60vh;
   padding: 7px;
   /*box-shadow: inset 20px 20px 300px 90px #1A1A1A;*/
-  background: radial-gradient(ellipse farthest-side at 525px, #B3B3B3 20%, black);
-  border: 1px solid black;
+  /*background: radial-gradient(ellipse farthest-side at 525px, #B3B3B3 20%, black);*/
+  background: radial-gradient(ellipse farthest-side at 67%, #B3B3B3 20%, black);
+  border: 1px solid red;
   font-size:24px;
   /*background: #B3B3B3;*/
 }
@@ -178,15 +190,19 @@ textarea[placeholder] {
   color: white;
 }
 .selfpic {
-  width: 220px;
+  width: 15%;
+  /*width: 220px;
+  height: 150px;
+  float: right;*/
   position: absolute;
   top: 200px;
   right: 45px;
   border: 1px solid black;
 }
 .selfpic img{
-width: 220px;
-height: 150px;
+/*width: 220px;
+height: 150px;*/
+width: 100%;
 border: 1px solid black;
 }
 .selfpic p {
@@ -255,7 +271,7 @@ h3 {
 .curtaintop {
   width: 1346px;
   position: absolute;
-  top: 0px;
+  top: -100px;
   }
 .curtainleft img {
   height: 480px;
@@ -263,7 +279,7 @@ h3 {
 .curtainleft {
   position: absolute;
   top: 215px;
-  left: 0px;
+  left: -200px;
 }
 .curtainright img {
   height: 480px;
@@ -271,7 +287,7 @@ h3 {
 .curtainright {
   position: absolute;
   top: 215px;
-  right: 0px;
+  right: -200px;
 }
 .seats img {
   width: 100%;
@@ -296,5 +312,8 @@ h3 {
 }
 .effects {
   background: #000000;
-  nav
+  -webkit-transition-duration: 10s;
+}
+.raiseup {
+  position: absolute;
 }

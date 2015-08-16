@@ -1,19 +1,23 @@
 $(document).ready(function() {
+    /*$('#playbutton').on('click', function() {
+        $('#myvid').play();
+    });*/
     $('video').one({mouseenter: function() {
         $('body').addClass('effects');
         $('.videotext').hide();
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '135px'}, 'fast');
         $('.curtaintop').show().animate({'top': '45px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '125px'}, 'fast');
         $('.curtaintop').show().animate({'top': '65px'}, 'fast');
         $('.curtaintop').show().animate({'top': '95px'}, 'fast');
         $('.curtaintop').show().animate({'top': '85px'}, 'fast');
         $('.curtaintop').show().animate({'top': '95px'}, 'fast');
-        $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 2500);
-        $('.curtainright').delay(1500).show().animate({'right': '160px'}, 2500);
+        $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 4000);
+        $('.curtainright').delay(1500).show().animate({'right': '160px'}, 4000);
         $('.seats').show();
         $('#playbutton').show();
         $('#exitbutton').show();
+        /*$('nav').addClass('raiseup').animate({'top': '40px', 'left': '390px'});*/
         },
         /*mouseleave: function() {
         $('body').removeClass('effects');
@@ -42,7 +46,7 @@ $(document).ready(function() {
         $('#playbutton').show();
         $('#exitbutton').show();
         },
-        pause: function() {
+        ended: function() {
         $('body').removeClass('effects');
         $('.videotext').show();
         $('.curtaintop').hide().animate({'top': '0px'});
@@ -53,6 +57,18 @@ $(document).ready(function() {
         $('#exitbutton').hide();
         }
     });
+
+    $('#exitbutton').on({click: function() {  
+        $('body').removeClass('effects');
+        $('.videotext').show();
+        $('.curtaintop').hide().animate({'top': '0px'});
+        $('.curtainleft').hide().animate({'left': '0px'});
+        $('.curtainright').hide().animate({'right': '0px'});
+        $('.seats').hide();
+        $('#playbutton').hide()
+        $('#exitbutton').hide();
+        }
+    });  
 
 });
 
@@ -73,4 +89,5 @@ var exitvideo = document.getElementById('exitbutton');
 exitvideo.addEventListener('click', function() {
     playvideo.pause();
 })
+
 
