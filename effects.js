@@ -63,13 +63,49 @@ $(document).ready(function() {
         $('.videotext').show();
         $('.curtaintop').hide().animate({'top': '0px'});
         $('.curtainleft').hide().animate({'left': '0px'});
-        $('.curtainright').hide().animate({'right': '0px'});
+        $('.curtainright').hide().animate({'right': '1000px'});
         $('.seats').hide();
         $('#playbutton').hide()
         $('#exitbutton').hide();
         }
-    });  
+    }); 
 
+    $('#semantic').on({mouseenter: function() {
+        $('.semantic').show().animate({'right': '10vw'});
+        },
+        mouseleave: function() {
+        $('.semantic').animate({'right': '-100vw'});
+        }
+    });
+
+    $('#zen').on({mouseenter: function() { 
+        $('.zen').show().animate({'right': '10vw'});
+        },
+        mouseleave: function() {
+        $('.zen').animate({'right': '-100vw'});
+        }
+    });
+    $('#selectors').on({mouseenter: function() { 
+        $('.selectors').show().animate({'right': '10vw'});
+        },
+        mouseleave: function() {
+        $('.selectors').animate({'right': '-100vw'});
+        }
+    });
+    $('#js').on({mouseenter: function() { 
+        $('.js').show().animate({'right': '10vw'});
+        },
+        mouseleave: function() {
+        $('.js').animate({'right': '-100vw'});
+        }
+    });
+    $('#group').on({mouseenter: function() { 
+        $('.group').show().animate({'right': '10vw'});
+        },
+        mouseleave: function() {
+        $('.group').animate({'right': '-100vw'});
+        }
+    });
 });
 
 

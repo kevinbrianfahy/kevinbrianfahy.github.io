@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <!--<script></script>-->
         <link type="text/css" rel="stylesheet" href="portfolioA.css">
-        <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:500|Playball|Indie+Flower' rel='stylesheet' type='text/css'>
     </head>
     <body>
           <header>
@@ -14,33 +14,34 @@
                   <a href="home.html">Home</a></li>
               </div>
           </header>
-          <main>
+          <main class = 'projmain'>
                 <ul class = "projects">
                   <li>
-                      <a href="#"><img src="images/semantic.png"/></a>
+                      <a href="#"><img id='semantic' src="images/semantic.png"/></a>
                       <h4>HTML Semantics</h4>
                   </li>
                   <li>
-                      <a href="Zen/index.html"><img src="images/Zen.png"/></a>
+                      <a href="Zen/index.html"><img id='zen' src="images/Zen.png"/></a>
                       <h4>CSS Zen Garden</h4>
                   </li>
                   <li>
-                      <a href="selectors-exercise/selectors.html"><img src="images/selectors.png"/></a>
+                      <a href="selectors-exercise/selectors.html"><img id='selectors' src="images/selectors.png"/></a>
                       <h4>CSS Selectors</h4>
                   </li>
                   <li>
-                      <a href="#"><img src="images/recursion.png"/></a>
+                      <a href="#"><img id='js'src="images/recursion.png"/></a>
                       <h4>JavaScript</h4>
                       <h4>Command Line</h4>
                       <h4>Markdown</h4>
                   </li>
                   <li>
-                      <a href="#"><img src="images/semantic.png"/></a>
+                      <a href="#"><img id='group' src="images/semantic.png"/></a>
                       <h4>Group Project</h4>
                   </li>
               </ul>
               <div class = "descriptions">
-                  <h3>HTML Semantics</h3>
+                  <div class = "semantic">
+                      <h3>HTML Semantics</h3>
                       <p>Can you believe that our class started out learning JavaScript before HTML or CSS? Cool fact. The instructors
                          felt it better to dive in the deep end right away and that way it would get easier as we went along.
                          Having JavaScript knowledge first certainly made it easier to understand the importance of semantic html.
@@ -49,18 +50,29 @@
                          structure when writing a paper, the fundamentals of properly organized html are our basis for creating a dynamic
                          website. We could see how important this is for working in a company team, where others should be able to simply
                         take a look at your DOM outline and understand how you might want the CSS and JavaScript to be written.</p>
-                  <h3>CSS Zen Garden</h3>
+                  </div>
+                  <div class = "zen">
+                      <h3>CSS Zen Garden</h3>
                       <p>This was a fun project where the html was already done and we simply had to practice our beginners knowledge of
-                         css selectors to design the html page.</p>
-                  <h3>CSS Selectors</h3>
+                           css selectors to design the html page.</p>
+                  </div>
+                  <div class = "selectors">
+                      <h3>CSS Selectors</h3>
                       <p>Our CSS moved out of the rookie phase during this project. Challenging, yet rewarding, this project was probably the most fun for me.
-                         Using nth child selectors as well as some attributes, I incorporated a triple linear gradient rotated 45 degrees
-                        to attain the effect of slicing through an individual cell and creating a pyramid. VERY satisfying.  </p>
-                  <h3>JavaScript</h3>
+                           Using nth child selectors as well as some attributes, I incorporated a triple linear gradient rotated 45 degrees
+                          to attain the effect of slicing through an individual cell and creating a pyramid. VERY satisfying.</p>
+                  </div>
+                  <div class = "js">
+                      <h3>JavaScript</h3>
                       <p>Take a look at those JavaScript worksheets I mentioned! You'll also see that we learned some command line essentials, as well as Markdown.</p>
-                  <h3>Group Project</h3>
+                  </div>
+                  <div class = "group">
+                      <h3>Group Project</h3>
                       <p>More comments here!</p>
+                  <div>
               </div>
         </main>
+        <script src='jquery-1.11.3.min.js'></script>
+        <script src='effects.js'></script>
     </body>
 </html>

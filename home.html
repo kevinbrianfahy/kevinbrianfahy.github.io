@@ -4,7 +4,7 @@
     <title>Kevin Fahy, Web Developer</title>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="portfolioA.css">
-    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500|Playball|Indie+Flower' rel='stylesheet' type='text/css'>
   </head>
   <body>
         <header>
@@ -13,15 +13,21 @@
                     <ul>
                       <li><a href="resume.html">resum&eacute;</a></li>
                       <li><a href="contact.html">contact</a></li>
-                      <li><a href="blog.html">blog</a></li>
+                      <li><a href="http://kevinbrianfahy.github.io/blog/">blog</a></li>
                       <li><a href="projects.html">projects</a></li>
                     </ul>
                 </nav>
         </header>
+        <div class = "first"></div>
+        <div class = "second"></div>
+
         <main>
-            <center><video id="myvid" width="640" height="480" controls type="video/mp4">
-              <source src="me.mp4" autostart="false">Your browser does not support the video tag.
-            </video></center>
+            <div class="video">
+              <video id="myvid" controls type="video/mp4">
+                <source src="me.mp4" autostart="false">Your browser does not support the video tag.
+              </video>
+            </div>
+
             <div class="videotext">
                 <p>Thanks for checking out my portfolio website! My background is in sales and retail. In fact I was a bank manager.
                   In the end I couldn't deny my passion, as I desperately wanted to be involved in the tech world. Attending the YWEB
@@ -57,6 +63,6 @@
           <input type="submit" value="Exit">
         </div>
         <script src='jquery-1.11.3.min.js'></script>
-      <script src='effects.js'></script>
+        <script src='effects.js'></script>
   </body>
 </html>
