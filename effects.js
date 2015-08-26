@@ -71,49 +71,45 @@ $(document).ready(function() {
     }); 
 
     $('#semantic').on({mouseenter: function() {
-        $('.semantic').show().animate({'right': '10vw'});
+        $('.semantic').show().animate({'right': '10vw'}, 1000);
         },
         mouseleave: function() {
-        $('.semantic').animate({'right': '-100vw'});
+        $('.semantic').animate({'right': '-100vw'}, 1000);
         }
     });
 
     $('#zen').on({mouseenter: function() { 
-        $('.zen').show().animate({'right': '10vw'});
+        $('.zen').show().animate({'right': '10vw'}, 1000);
         },
         mouseleave: function() {
-        $('.zen').animate({'right': '-100vw'});
+        $('.zen').animate({'right': '-100vw'}, 1000);
         }
     });
     $('#selectors').on({mouseenter: function() { 
-        $('.selectors').show().animate({'right': '10vw'});
+        $('.selectors').show().animate({'right': '10vw'}, 1000);
         },
         mouseleave: function() {
-        $('.selectors').animate({'right': '-100vw'});
+        $('.selectors').animate({'right': '-100vw'}, 1000);
         }
     });
     $('#js').on({mouseenter: function() { 
-        $('.js').show().animate({'right': '10vw'});
+        $('.js').show().animate({'right': '10vw'}, 1000);
         },
         mouseleave: function() {
-        $('.js').animate({'right': '-100vw'});
+        $('.js').animate({'right': '-100vw'}, 1000);
         }
     });
     $('#group').on({mouseenter: function() { 
-        $('.group').show().animate({'right': '10vw'});
+        $('.group').show().animate({'right': '10vw'}, 1000);
         },
         mouseleave: function() {
-        $('.group').animate({'right': '-100vw'});
+        $('.group').animate({'right': '-100vw'}, 1000);
         }
     });
+
+
 });
 
-
-/* WHY DOESN'T THIS WORK???
-$('#playbutton').on('click', function() {
-        $('#myvid').play();
-    });
-*/
 
 var playvideo = document.getElementById('myvid');
 var needPlayButton = document.getElementById('playbutton');
@@ -126,4 +122,12 @@ exitvideo.addEventListener('click', function() {
     playvideo.pause();
 })
 
+/*
+$('nav li').on({click: function() { 
+
+<li><a href="resume.html">resum&eacute;</a></li>
+<li><a href="contact.html">contact</a></li>
+<li><a href="http://kevinbrianfahy.github.io/blog/">blog</a></li>
+<li><a href="projects.html">projects</a></li>
+*/
 
