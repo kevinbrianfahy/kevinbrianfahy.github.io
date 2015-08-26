@@ -1,9 +1,14 @@
 
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(proximaNova/ProximaNova-Reg.woff) format('woff');
+}
+
 html, body, header, h1, h2, h3, h4, ul, li, a, p {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Playball', Arial, Helvetica;
+  font-family: 'ProximaNova', Arial, Helvetica;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
@@ -62,7 +67,6 @@ nav li {
     box-shadow:3px 3px 3px #000;
 }
 a {
-  font-family: arial;
   font-weight: bold;
 }
 
@@ -87,9 +91,6 @@ p {
   font-size: 1.1em;
 }
 .videotext p {
-  text-shadow: .5px .5px black;
-  font-family: 'Indie Flower';
-  color: black;
   font-size: 3vh;
 
 }
@@ -301,9 +302,7 @@ border: 1px solid black;
   display: none;
 }
 .descriptions p {
-  text-shadow: .5px .5px black;
-  font-family: 'Indie Flower';
-  color: black;
+  /*text-shadow: .5px .5px black;*/
   font-size: 3vh;
 }
 h3 {
