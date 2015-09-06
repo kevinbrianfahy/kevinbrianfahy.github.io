@@ -173,8 +173,8 @@ h2 {
   top: 10px;
   left: 270px;
 }
-form {
-  font-family: 'Indie Flower';
+/* copied from 'form' element below */
+#wufoo-z1bcspgi1sbwmie {
   padding: 10px;
   /*width: 815px;*/
   width: 65%;
@@ -184,8 +184,19 @@ form {
   /*float: left;*/
   margin-left: 100px;
 }
+
+form {
+  padding: 10px;
+  /*width: 815px;*/
+  width: 65%;
+  border-top:1px solid black;
+  box-shadow: 3px 3px 3px black;
+  background: url(images/halftone/halftone.png);
+  /*float: left;*/
+  margin-left: 100px;
+}
+
 input[type=submit] {
-  font-family: 'Indie Flower';
   display:block;
   margin:5px 10px 5px 10px;
   width: 25%;
@@ -196,7 +207,6 @@ input[type=submit] {
   box-shadow: 1px 1px 15px 0 #1A1A1A;
 }
 input[type=text] {
-  font-family: 'Indie Flower';
   display:block;
   margin:5px 10px 5px 10px;
   width: 60%;
@@ -208,7 +218,6 @@ input[type=text] {
   opacity: .7;
 }
 textarea {
-  font-family: 'Indie Flower';
   margin: 5px 10px 0 10px;
   /*width:750px;*/
   width: 93%;
@@ -227,25 +236,20 @@ textarea {
 
 
 input[placeholder] {
-  font-family: 'Indie Flower';
   color: black;
   padding-left: 30px;
 }
 textarea[placeholder] {
-  font-family: 'Indie Flower';
   color: black;
   padding: 20px 0 0 40px
 }
 ::-webkit-input-placeholder {
-  font-family: 'Indie Flower';
   color: black;
 }
 ::-moz-placeholder {
-  font-family: 'Indie Flower';
   color: black;
 }
 :-ms-input-placeholder {
-  font-family: 'Indie Flower';
   color: black;
 }
 .selfpic {

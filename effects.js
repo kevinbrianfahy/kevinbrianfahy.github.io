@@ -122,12 +122,6 @@ exitvideo.addEventListener('click', function() {
     playvideo.pause();
 })
 
-/*
-$('nav li').on({click: function() { 
+/*   WuFoo script */
 
-<li><a href="resume.html">resum&eacute;</a></li>
-<li><a href="contact.html">contact</a></li>
-<li><a href="http://kevinbrianfahy.github.io/blog/">blog</a></li>
-<li><a href="projects.html">projects</a></li>
-*/
 
