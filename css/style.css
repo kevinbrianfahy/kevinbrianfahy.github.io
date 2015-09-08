@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'ProximaNova';
-  src: url(proximaNova/ProximaNova-Reg.woff) format('woff');
+  src: url(../proximaNova/ProximaNova-Reg.woff) format('woff');
 }
 
 html, body, header, h1, h2, h3, h4, ul, li, a, p {
@@ -22,7 +22,7 @@ body {
 }
 body::after {
   content: "";
-  background-image: url(images/dark_embroidery/dark_embroidery.png);
+  background-image: url(../attachments/dark_embroidery/dark_embroidery.png);
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -38,6 +38,9 @@ header {
 main {
   /*margin: 0 20px 20px 20px; */
   /*padding: 0 0 10vh 0;*/
+}
+.pagehead {
+  height: 20vh;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -65,20 +68,19 @@ nav li {
     background: white;
     box-shadow:3px 3px 3px;
 }
-.menu {
+nav li a {
   font-weight: bold;
   color: #660066;
   transition: .75s;
 }
-.menu:link {
+nav li a:link {
   display: inline-block;
   font-weight: bold;
   color: #660066;
 }
-.menu:hover {
+nav li a:hover {
   transform: scale(1.5);
 }
-
 .video {
   max-height: 70vh;
   max-width: 93.333vh;
@@ -101,6 +103,16 @@ p {
 }
 .videotext p {
   font-size: 3vh;
+}
+input[type=submit] {
+  display:block;
+  margin:5px 10px 5px 10px;
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  background: #B3B3B3;
+  box-shadow: 1px 1px 15px 0 #1A1A1A;
 }
 /*.first {
   height: 40vh;
@@ -131,7 +143,7 @@ h2 {
 }
 .resume {
   padding: 0;
-  background: url(images/paper.png);
+  background: url(../attachments/images/paper.png);
   height: 1050px;
   width: 800px;
   margin:0 auto 0 auto;
@@ -142,8 +154,29 @@ h2 {
   opacity: .7;
   height: 1050px;
   width: 800px;
-
 }
+.downloads {
+  height: 50px;
+  width: 20%;
+  margin: 0 auto;
+}
+button {
+  width: 30%;
+  font-family: 'ProximaNova';
+  font-size: 1em;
+  color: white;
+  text-shadow: 1.5px 1.5px 1px black;
+  background: #B3B3B3;
+  box-shadow: 1px 1px 5px 0 #1A1A1A;
+}
+#word {
+  float: left;
+}
+#pdf {
+  float: right;
+}
+
+
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -170,87 +203,19 @@ h2 {
   background: white;
   box-shadow:3px 3px 3px #000;
   position: absolute;
-  top: 10px;
-  left: 270px;
+  top: 12px;
+  left: 280px;
 }
-/* copied from 'form' element below */
+/* copied from original 'form' element */
 #wufoo-z1bcspgi1sbwmie {
   padding: 10px;
   /*width: 815px;*/
   width: 65%;
   border-top:1px solid black;
   box-shadow: 3px 3px 3px black;
-  background: url(images/halftone/halftone.png);
+  background: url(../attachments/halftone/halftone.png);
   /*float: left;*/
   margin-left: 100px;
-}
-
-form {
-  padding: 10px;
-  /*width: 815px;*/
-  width: 65%;
-  border-top:1px solid black;
-  box-shadow: 3px 3px 3px black;
-  background: url(images/halftone/halftone.png);
-  /*float: left;*/
-  margin-left: 100px;
-}
-
-input[type=submit] {
-  display:block;
-  margin:5px 10px 5px 10px;
-  width: 25%;
-  font-size: 20px;
-  color: white;
-  text-shadow: 2px 2px 3px black;
-  background: #B3B3B3;
-  box-shadow: 1px 1px 15px 0 #1A1A1A;
-}
-input[type=text] {
-  display:block;
-  margin:5px 10px 5px 10px;
-  width: 60%;
-  border:1px solid black;
-  font-size: 20px;
-  padding: 7px;
-  box-shadow: inset 2px 2px 8px 0px #1A1A1A;
-  background: white;
-  opacity: .7;
-}
-textarea {
-  margin: 5px 10px 0 10px;
-  /*width:750px;*/
-  width: 93%;
-  /*height: 400px;*/
-  height: 60vh;
-  padding: 7px;
-  box-shadow: inset 5px 5px 10px 0px #1A1A1A;
-  /*background: radial-gradient(ellipse farthest-side at 525px, #B3B3B3 20%, black);*/
-  /*background: radial-gradient(ellipse farthest-side at 67%, #B3B3B3 20%, black);*/
-  background: white;
-  opacity: .7;
-  font-size:24px;
-  /*background: #B3B3B3;*/
-  border: 1px solid black;
-}
-
-
-input[placeholder] {
-  color: black;
-  padding-left: 30px;
-}
-textarea[placeholder] {
-  color: black;
-  padding: 20px 0 0 40px
-}
-::-webkit-input-placeholder {
-  color: black;
-}
-::-moz-placeholder {
-  color: black;
-}
-:-ms-input-placeholder {
-  color: black;
 }
 .selfpic {
   width: 15%;
@@ -391,7 +356,3 @@ h3 {
 .raiseup {
   position: absolute;
 }
-
-/*nav display inline-block
-background image using pseudo element after, before
-*/
