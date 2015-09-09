@@ -105,6 +105,14 @@ p {
   margin-bottom: 10px;
   font-size: 1.1em;
 }
+p a {
+  font-weight: bold;
+  color: #660066;
+}
+p a:link {
+  font-weight: bold;
+  color: #660066;
+}
 .videotext p {
   font-size: 3vh;
 }
@@ -149,7 +157,11 @@ h2 {
   padding: 0;
   background: url(../attachments/images/paper.png);
   height: 1050px;
+  -ms-width: 800px;
+  -webkit-width: 800px;
   width: 800px;
+  -ms-margin: 0 auto 0 auto;
+  -webkit-margin: 0 auto 0 auto;
   margin:0 auto 0 auto;
   border-top: 1px solid black;
   box-shadow: 5px 5px 5px black;
@@ -186,6 +198,12 @@ button {
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
+.contactmain {
+  -ms-height: 100vh;
+  -webkit-height: 100vh;
+  height: 100vh;
+}
+
 .socialmedia {
   position:absolute;
   left: 500px;
@@ -251,8 +269,9 @@ border: 1px solid black;
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 .projmain {
-  height: 800px;
-
+  -ms-height: 100vh;
+  -webkit-height: 100vh;
+  height: 100vh;
 }
 .home {
     position: absolute;
