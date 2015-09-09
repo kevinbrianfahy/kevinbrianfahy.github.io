@@ -17,6 +17,7 @@ html {
 }
 body {
   padding: 0 0 10vh 0;
+  background: -webkit-linear-gradient(90deg, #DB94FF 60%, #ffffff);
   background: linear-gradient(0deg, #DB94FF 60%, #ffffff);
   position: relative;
 }
