@@ -1,17 +1,19 @@
 $(document).ready(function() {
-    /*$('#playbutton').on('click', function() {
-        $('#myvid').play();
-    });*/
     $('video').one({mouseenter: function() {
         $('body').addClass('effects');
+        $('body').css({'background': '#000'});
         $('.videotext').hide();
-        $('.curtaintop').show().animate({'top': '135px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '45px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '125px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
         $('.curtaintop').show().animate({'top': '85px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '45px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '25px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '5px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '0px'}, 'fast');
         $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 4000);
         $('.curtainright').delay(1500).show().animate({'right': '160px'}, 4000);
         $('.seats').show();
@@ -32,27 +34,33 @@ $(document).ready(function() {
 
     $('video').on({play: function() {
         $('body').addClass('effects');
+        $('body').css({'background': '#000'});
         $('.videotext').hide();
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '45px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
         $('.curtaintop').show().animate({'top': '85px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '95px'}, 'fast');
-        $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 2500);
-        $('.curtainright').delay(1500).show().animate({'right': '160px'}, 2500);
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '45px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '25px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '5px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
+        $('.curtaintop').show().animate({'top': '0px'}, 'fast');
+        $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 4000);
+        $('.curtainright').delay(1500).show().animate({'right': '160px'}, 4000);
         $('.seats').show();
         $('#playbutton').show();
         $('#exitbutton').show();
         },
         ended: function() {
         $('body').removeClass('effects');
+        $('body').css({'background': 'linear-gradient(0deg, #DB94FF 60%, #ffffff)'});
         $('.videotext').show();
-        $('.curtaintop').hide().animate({'top': '0px'});
-        $('.curtainleft').hide().animate({'left': '0px'});
-        $('.curtainright').hide().animate({'right': '0px'});
-        $('.seats').hide();
+        $('.curtaintop').animate({'top': '-100px'}).hide();
+        $('.curtainleft').animate({'left': '-200px'}).hide();
+        $('.curtainright').animate({'right': '-200px'}).hide();
+        $('.seats').animate({'bottom': '-215px'}).hide();
         $('#playbutton').hide();
         $('#exitbutton').hide();
         }
@@ -60,12 +68,13 @@ $(document).ready(function() {
 
     $('#exitbutton').on({click: function() {  
         $('body').removeClass('effects');
+        $('body').css({'background': 'linear-gradient(0deg, #DB94FF 60%, #ffffff)'});
         $('.videotext').show();
-        $('.curtaintop').hide().animate({'top': '0px'});
-        $('.curtainleft').hide().animate({'left': '0px'});
-        $('.curtainright').hide().animate({'right': '1000px'});
-        $('.seats').hide();
-        $('#playbutton').hide()
+        $('.curtaintop').animate({'top': '-100px'}).hide();
+        $('.curtainleft').animate({'left': '-200px'}).hide();
+        $('.curtainright').animate({'right': '-200px'}).hide();
+        $('.seats').animate({'bottom': '-215px'}).hide();
+        $('#playbutton').hide();
         $('#exitbutton').hide();
         }
     }); 
