@@ -14,13 +14,25 @@ html, body, header, h1, h2, h3, h4, ul, li, a, p {
   text-decoration: none;
 }
 html {
+  background: #660066;
+  border: 6px solid black;
+}
+.wrapper {
+
 }
 body {
   padding: 0 0 10vh 0;
+  margin: 1%;
+  border: 2px solid black;
+  background: #DB94FF;
+  box-shadow: 2px 2px 20px;
+  /*
   background: -webkit-linear-gradient(0deg, #DB94FF 60%, #ffffff);
   background: -ms-linear-gradient(0deg, #DB94FF 60%, #ffffff);
   background: linear-gradient(0deg, #DB94FF 60%, #ffffff);
+  */
   position: relative;
+  z-index: -1;
 }
 body::after {
   content: "";
@@ -44,13 +56,10 @@ main {
 .pagehead {
   height: 20vh;
 }
-
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
-
-
 
 h1 {
   text-align: center;
@@ -58,6 +67,9 @@ h1 {
   /*font-size: 85px;*/
   font-size: 12.5vh;
   /*font-size: 5em;*/
+  color: white;
+  /*text-shadow: 15px 22.5px 5px #333333;*/
+  text-shadow: 15px 30px 5px #333333;
 }
 nav {
   text-align: center;
@@ -68,7 +80,8 @@ nav li {
     padding: 5px 25px 5px 25px;
     border: 1px solid #CC66FF;
     background: white;
-    box-shadow:3px 3px 3px;
+    /*box-shadow: 5px 7.5px 5px #333333;*/
+    box-shadow: 10px 15px 5px #333333;
 }
 nav li a {
   font-weight: bold;
@@ -96,6 +109,7 @@ nav li a:hover {
 video {
   width: 100%;
   display: block;
+  box-shadow: 4px 4px 20px;
 }
 
 .videotext {
@@ -128,22 +142,6 @@ input[type=submit] {
   background: #B3B3B3;
   box-shadow: 1px 1px 15px 0 #1A1A1A;
 }
-/*.first {
-  height: 40vh;
-  width: 20vw;
-  border: 1px solid red;
-  position: absolute;
-  top: 50vh;
-  left: 10vw;
-}
-.second {
-  height: 40vh;
-  width: 20vw;
-  border: 1px solid black;
-  position: absolute;
-  top 100vh;
-  left: 20vh;
-}*/
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -263,13 +261,6 @@ border: 1px solid black;
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
-.blog {
-
-}
-/* ------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------ */
 .projmain {
   -ms-height: 100vh;
   -webkit-height: 100vh;
@@ -359,6 +350,7 @@ h3 {
   top: 145px;
   right: -200px;
 }
+/*
 .seats img {
   width: 100%;
   display: block;
@@ -368,7 +360,7 @@ h3 {
   position: absolute;
   bottom: -215px;
 }
-
+*/
 #playbutton {
   width: 25%;
   position: absolute;
@@ -381,24 +373,62 @@ h3 {
   right: -200px;
 }
 
-@-webkit-keyframes curtain {
+
+@-webkit-keyframes fadeblack {
   from {background: #DB94FF;}
   to {background: #000;}
 }
-@keyframes curtain {
+@keyframes fadeblack {
   from {background: #DB94FF;}
   to {background: #000;}
 }
-.effects {
-  -webkit-animation-name: curtain;
-          animation-name: curtain;
+.fadeblack {
+  -webkit-animation-name: fadeblack;
+          animation-name: fadeblack;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;  
-}
-
-/*
-.effects {
   background: #000;
 }
-*/
+
+
+@-webkit-keyframes lightson {
+  from {background: #660066;}
+  to {background: #FBFCD7;}
+}
+@keyframes lightson {
+  from {background: #660066;}
+  to {background: #FBFCD7;}
+}
+.lightson {
+  -webkit-animation-name: lightson;
+          animation-name: lightson; 
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  background: #FBFCD7;
+}
+
+
+@-webkit-keyframes patternfade {
+  from {opacity: .5;}
+  to {opacity: 0;}
+}
+@keyframes patternfade {
+  from {opacity: .5;}
+  to {opacity: 0;}
+}
+body.patternfade::after {
+  content: "";
+  background-image: url(../attachments/dark_embroidery/dark_embroidery.png);
+  -webkit-animation-name: patternfade;
+          animation-name: patternfade;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 

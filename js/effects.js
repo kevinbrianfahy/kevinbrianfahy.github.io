@@ -1,84 +1,61 @@
-$(document).ready(function() {
-    $('video').one({mouseenter: function() {
-        $('body').addClass('effects');
-        $('body').css({'background': '#000'});
-        $('.videotext').hide();
-        $('.curtaintop').show().animate({'top': '85px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '45px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '25px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '5px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '0px'}, 'fast');
-        $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 4000);
-        $('.curtainright').delay(1500).show().animate({'right': '160px'}, 4000);
-        $('.seats').show();
-        $('#playbutton').show();
-        $('#exitbutton').show();
-        /*$('nav').addClass('raiseup').animate({'top': '40px', 'left': '390px'});*/
-        },
-        /*mouseleave: function() {
-        $('body').removeClass('effects');
-        $('.videotext').show();
-        $('.curtaintop').hide().animate({'top': '0px'});
-        $('.curtainleft').hide().animate({'left': '0px'});
-        $('.curtainright').hide().animate({'right': '0px'});
-        $('.seats').hide();
-        $('#playbutton').hide();
-        }*/
-    });
+var drawcurt = function() {
+    var commands = {
+        a: $('html').addClass('lightson'),
+        b: $('body').addClass('fadeblack'),
+        c: $('body').addClass('patternfade'),
+        d: $('.videotext').hide(),
+        e: $('.curtaintop').show().animate({'top': '85px'}, 'fast'),
+        f: $('.curtaintop').animate({'top': '-65px'}, 'fast'),
+        g: $('.curtaintop').animate({'top': '65px'}, 'fast'),
+        h: $('.curtaintop').animate({'top': '-65px'}, 'fast'),
+        i: $('.curtaintop').animate({'top': '45px'}, 'fast'),
+        j: $('.curtaintop').animate({'top': '-65px'}, 'fast'),
+        k: $('.curtaintop').animate({'top': '25px'}, 'fast'),
+        l: $('.curtaintop').animate({'top': '-65px'}, 'fast'),
+        m: $('.curtaintop').animate({'top': '5px'}, 'fast'),
+        n: $('.curtaintop').animate({'top': '-65px'}, 'fast'),
+        o: $('.curtaintop').animate({'top': '0px'}, 'fast'),
+        p: $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 4000),
+        q: $('.curtainright').delay(1500).show().animate({'right': '160px'}, 4000),
+        r: $('#playbutton').show(),
+        s: $('#exitbutton').show(),
+    };
+};
+var closecurt = function() {
+    var commands = {
+        a: $('html').removeClass('lightson'),
+        b: $('body').removeClass('fadeblack'),
+        c: $('body').removeClass('patternfade'), 
+        d: $('.videotext').show(),
+        e: $('.curtaintop').animate({'top': '-100px'}).hide(),
+        f: $('.curtainleft').animate({'left': '-200px'}).hide(),
+        g: $('.curtainright').animate({'right': '-200px'}).hide(),
+        h: $('#playbutton').hide(),
+        i: $('#exitbutton').hide(),
+    };
+};
 
+$(document).ready(function() {
+            /*   curtain commands   */
+
+    $('video').one({mouseenter: function() {
+        drawcurt();
+        },
+    });
     $('video').on({play: function() {
-        $('body').addClass('effects');
-        $('body').css({'background': '#000'});
-        $('.videotext').hide();
-        $('.curtaintop').show().animate({'top': '85px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '45px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '25px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '5px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '-65px'}, 'fast');
-        $('.curtaintop').show().animate({'top': '0px'}, 'fast');
-        $('.curtainleft').delay(1500).show().animate({'left': '180px'}, 4000);
-        $('.curtainright').delay(1500).show().animate({'right': '160px'}, 4000);
-        $('.seats').show();
-        $('#playbutton').show();
-        $('#exitbutton').show();
+        drawcurt();
         },
         ended: function() {
-        $('body').removeClass('effects');
-        $('body').css({'background': 'linear-gradient(0deg, #DB94FF 60%, #ffffff)'});
-        $('.videotext').show();
-        $('.curtaintop').animate({'top': '-100px'}).hide();
-        $('.curtainleft').animate({'left': '-200px'}).hide();
-        $('.curtainright').animate({'right': '-200px'}).hide();
-        $('.seats').animate({'bottom': '-215px'}).hide();
-        $('#playbutton').hide();
-        $('#exitbutton').hide();
+        closecurt();
         }
     });
-
     $('#exitbutton').on({click: function() {  
-        $('body').removeClass('effects');
-        $('body').css({'background': 'linear-gradient(0deg, #DB94FF 60%, #ffffff)'});
-        $('.videotext').show();
-        $('.curtaintop').animate({'top': '-100px'}).hide();
-        $('.curtainleft').animate({'left': '-200px'}).hide();
-        $('.curtainright').animate({'right': '-200px'}).hide();
-        $('.seats').animate({'bottom': '-215px'}).hide();
-        $('#playbutton').hide();
-        $('#exitbutton').hide();
+        closecurt();
         }
     }); 
+    
 
+            /*   gallery commands    */
     $('#semantic').on({mouseenter: function() {
         $('.semantic').show().animate({'right': '10vw'}, 1000);
         },
@@ -115,22 +92,20 @@ $(document).ready(function() {
         $('.group').animate({'right': '-100vw'}, 1000);
         }
     });
-
-
+    var playvideo = document.getElementById('myvid');
+    var needPlayButton = document.getElementById('playbutton');
+    needPlayButton.addEventListener('click', function() {
+        playvideo.play();
+    });
+    var exitvideo = document.getElementById('exitbutton');
+    exitvideo.addEventListener('click', function() {
+        playvideo.pause();
+    });
 });
 
 
-var playvideo = document.getElementById('myvid');
-var needPlayButton = document.getElementById('playbutton');
-needPlayButton.addEventListener('click', function() {
-    playvideo.play();
-});
 
-var exitvideo = document.getElementById('exitbutton');
-exitvideo.addEventListener('click', function() {
-    playvideo.pause();
-})
 
-/*   WuFoo script */
+
 
 
