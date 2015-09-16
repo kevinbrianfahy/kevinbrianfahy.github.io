@@ -324,31 +324,40 @@ h3 {
   display: none;
 }
 .curtaintop img {
-  height: 150px;
+  /*height: 150px;*/
+  height: 100%;
   width: 100%;
   display: block;
   opacity: .9;
 }
 .curtaintop {
+  height: 22.5%;
   width: 100%;
   position: absolute;
-  top: 0px;
+  top: 0%;
+  
   }
 .curtainleft img {
-  height: 480px;
+  /*height: 450px;*/
+  height: 100%;
   }
 .curtainleft {
+  height: 70%;
   position: absolute;
-  top: 145px;
-  left: -200px;
+  /*top: 145px;*/
+  top: 22%;
+  left: -30%;
 }
 .curtainright img {
-  height: 480px;
+  /*height: 450px;*/
+  height: 100%;
 }
 .curtainright {
+  height: 70%;
   position: absolute;
-  top: 145px;
-  right: -200px;
+  /*top: 145px;*/
+  top: 22%;
+  right: -30%;
 }
 /*
 .seats img {
