@@ -17,9 +17,6 @@ html {
   background: #660066;
   border: 6px solid black;
 }
-.wrapper {
-
-}
 body {
   padding: 0 0 10vh 0;
   margin: 1%;
@@ -278,18 +275,18 @@ border: 1px solid black;
     background: white;
     box-shadow:3px 3px 3px #000;
 }
-.projects {
+#projects {
   text-align: center;
 }
-.projects li {
+#projects li {
   display: inline-table;
   margin: 10px;
 }
-.projects img {
+#projects img {
   height: 150px;
   width: 150px;
 }
-.projects img:hover {
+#projects img:hover {
   box-shadow: 5px 3px 3px black;
   -webkit-transition: .75s;
   transition: .75s;
@@ -297,20 +294,47 @@ border: 1px solid black;
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
-.semantic, .zen, .selectors, .js, .group {
+#zen, #selectors, #group {
   box-sizing: border-box;
-  width: 80vw;
-  position: absolute;
-  right: -100vw;
-  /*background: #000;*/
+  width: 80%;
+ 
   padding: 20px;
-  /*box-shadow: 20px 20px 25px 5px gray;*/
   display: none;
 }
-.descriptions p {
-  /*text-shadow: .5px .5px black;*/
+#zen p {
+  font-size: 3vh;
+  }
+#selectors p {
+  font-size: 3vh;
+} 
+#group p {
   font-size: 3vh;
 }
+
+/*
+[id^='description-'] {
+  box-sizing: border-box;
+  width: 80%;
+  position: absolute;
+  right: -100%;
+  padding: 20px;
+  display: none;
+}
+[id^='description-'] p {
+  font-size: 3vh;
+}
+[data-] {
+  box-sizing: border-box;
+  width: 80%;
+  position: absolute;
+  right: -100%;
+  padding: 20px;
+  display: none;
+}
+[data-] p {
+  font-size: 3vh;
+}
+*/
 h3 {
   color:white;
   margin-bottom: 5px;

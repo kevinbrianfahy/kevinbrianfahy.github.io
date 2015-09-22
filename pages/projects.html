@@ -8,64 +8,44 @@
         <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
     </head>
     <body>
-          <header class='pagehead'>
-              <h2>Projects</h2>
-              <nav class="home">
-                  <ul>
-                      <li><a href="../index.html">Home</a></li>
-                      <li><a href="../pages/resume.html">resum&eacute;</a></li>
-                      <li><a href="../pages/contact.html">contact</a></li>
-                      <li><a href="/blog">blog</a></li>
-                  </ul>
-              </nav>
-          </header>
-          <main class = 'projmain'>
-                <ul class = "projects">
-                  <li>
-                      <a href="/zen" target='_blank'><img id='zen' src="../attachments/images/Zen.png"/></a>
-                      <h4>CSS Zen Garden</h4>
-                  </li>
-                  <li>
-                      <a href="/selectors" target='_blank'><img id='selectors' src="../attachments/images/selectors.png"/></a>
-                      <h4>CSS Selectors</h4>
-                  </li>
-                  <li>
-                      <a href="/LMHT" target="_blank"><img id='group' src="../attachments/images/lmht.png"/></a>
-                      <h4>Group Project</h4>
-                  </li>
-              </ul>
-              <div class = "descriptions">
-                  <div class = "semantic">
-                      <h3>HTML Semantics</h3>
-                      <p>Can you believe that our class started out learning JavaScript before HTML or CSS? Cool fact. The instructors
-                         felt it better to dive in the deep end right away and that way it would get easier as we went along.
-                         Having JavaScript knowledge first certainly made it easier to understand the importance of semantic html.
-                         We learned the basics of div's - how you have parents and children, how width and height are defaulted to auto.
-                         Here we learned what the DOM tree was, and how to read the html outline in the DOM. Similar to learning proper
-                         structure when writing a paper, the fundamentals of properly organized html are our basis for creating a dynamic
-                         website. We could see how important this is for working in a company team, where others should be able to simply
-                        take a look at your DOM outline and understand how you might want the CSS and JavaScript to be written.</p>
-                  </div>
-                  <div class = "zen">
-                      <h3>CSS Zen Garden</h3>
-                      <p>This was a fun project where the html was already done and we simply had to practice our beginners knowledge of
-                           css selectors to design the html page.</p>
-                  </div>
-                  <div class = "selectors">
-                      <h3>CSS Selectors</h3>
-                      <p>Our CSS moved out of the rookie phase during this project. Challenging, yet rewarding, this project was probably the most fun for me.
-                           Using nth child selectors as well as some attributes, I incorporated a triple linear gradient rotated 45 degrees
-                          to attain the effect of slicing through an individual cell and creating a pyramid. VERY satisfying.</p>
-                  </div>
-                  <div class = "js">
-                      <h3>JavaScript</h3>
-                      <p>Take a look at those JavaScript worksheets I mentioned! You'll also see that we learned some command line essentials, as well as Markdown.</p>
-                  </div>
-                  <div class = "group">
-                      <h3>Group Project</h3>
-                      <p>I was elected to be group leader for our capstone project, and was very happy with the idea we all came up with: An open source site to help spanish speakers understand the English terminology behind programming tags. We created a repo on GitHub, pushing and pulling as we built. We used a Jquery UI dropdown list in combination with an Ajax call to render different html documents to the page depending on what the user selects. The website uses an audio file and an idiomatic description for each tag selected to understand. We completed a readme file with explanation on how to easily add another programming tag to our website and continue to build this helpful educational tool!</p>
-                  <div>
-              </div>
+        <header class='pagehead'>
+            <h2>Projects</h2>
+            <nav class="home">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/resume.html">resum&eacute;</a></li>
+                    <li><a href="../pages/contact.html">contact</a></li>
+                    <li><a href="/blog">blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = 'projmain'>
+            <ul id='projects'>
+                <li>
+                    <a href="/zen" target='_blank'><img id='myzen' src="../attachments/images/Zen.png"/></a>
+                    <h4>CSS Zen Garden</h4>
+                </li>
+                <li>
+                    <a href="/selectors" target='_blank'><img data-='selectors' src="../attachments/images/selectors.png"/></a>
+                    <h4>CSS Selectors</h4>
+                </li>
+                <li>
+                    <a href="/LMHT" target="_blank"><img data-='group' src="../attachments/images/lmht.png"/></a>
+                    <h4>Group Project</h4>
+                </li>
+            </ul>
+            <div id='zen'>
+                <h3>CSS Zen Garden</h3>
+                <p>This was a fun project where the html was already done and we simply had to practice our beginners knowledge of css selectors to design the html page.</p>
+            </div>
+            <div id='selectors'>
+                <h3>CSS Selectors</h3>
+                <p>Our CSS moved out of the rookie phase during this project. Challenging, yet rewarding, this project was probably the most fun for me. Using nth child selectors as well as some attributes, I incorporated a triple linear gradient rotated 45 degrees to attain the effect of slicing through an individual cell and creating a pyramid. VERY satisfying.</p>
+            </div>
+            <div id='group'>
+                <h3>Group Project</h3>
+                <p>I was elected to be group leader for our capstone project, and was very happy with the idea we all came up with: An open source site to help spanish speakers understand the English terminology behind programming tags. We created a repo on GitHub, pushing and pulling as we built. We used a Jquery UI dropdown list in combination with an Ajax call to render different html documents to the page depending on what the user selects. The website uses an audio file and an idiomatic description for each tag selected to understand. We completed a readme file with explanation on how to easily add another programming tag to our website and continue to build this helpful educational tool!</p>
+            </div>
         </main>
         <script src='../js/jquery-1.11.3.min.js'></script>
         <script src='../js/effects.js'></script>
