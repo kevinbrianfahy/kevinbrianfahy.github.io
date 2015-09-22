@@ -2,13 +2,14 @@
 @font-face {
   font-family: 'ProximaNova';
   src: url(../proximaNova/ProximaNova-Reg.woff) format('woff');
+  src: url(../proximaNova/ProximaNova-Bold.woff) format('woff');
 }
 
 html, body, header, h1, h2, h3, h4, ul, li, a, p {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'ProximaNova', Arial, Helvetica;
+  font-family: 'ProximaNova-Reg', Arial, Helvetica;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
