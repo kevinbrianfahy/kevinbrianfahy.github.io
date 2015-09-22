@@ -275,6 +275,42 @@ border: 1px solid black;
     background: white;
     box-shadow:3px 3px 3px #000;
 }
+aside {
+  width: 15%;
+  height: 19.5%;
+  padding: 1.5%;
+  background-image: url(../attachments/dark_embroidery/dark_embroidery.png);
+  box-shadow: inset .2em .2em .8em .1em;
+  position: absolute;
+  left: 1.5%;
+  z-index: 1;
+}
+aside::after {
+  content: "";
+  background: #660066;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+aside h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1em;
+}
+aside li {
+  margin-bottom: 1em;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: #ffffff;
+}
+aside li a {
+  color: #DB94FF;
+  font-weight: 900;
+}
 #projects {
   text-align: center;
 }
