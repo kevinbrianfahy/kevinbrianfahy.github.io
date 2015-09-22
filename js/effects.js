@@ -54,7 +54,7 @@ $(document).ready(function() {
     }); 
 
             /*   gallery commands    */
-    /*
+    
     $('#projects img').on({mouseenter: function() { 
         var imageid = $(this).attr('data-');
         $('#' + imageid).show().animate({'right': '10%'}, 1500);
@@ -64,9 +64,9 @@ $(document).ready(function() {
         $('#' + imageid).animate({'right': '-100%'});
         }
     });
-    */
+    
 });
-/*
+
 var playvideo = document.getElementById('myvid');
     var needPlayButton = document.getElementById('playbutton');
     needPlayButton.addEventListener('click', function() {
@@ -76,82 +76,6 @@ var playvideo = document.getElementById('myvid');
     exitvideo.addEventListener('click', function() {
         playvideo.pause();
     });
-*/
-
-/*
-var projects = document.querySelectorAll('#projects img');
-    projects[0].addEventListener('mouseenter', function () {
-    var description = document.getElementById('zen').style.display = 'block';
-    }),
-    projects[0].addEventListener('mouseleave', function() {
-    var description = document.getElementById('zen').style.display = 'none';
-    })
-*/
-
-var projects = document.querySelectorAll('#projects img');
-for (var i=0; i<projects.length; i++) {
-    projects[i].addEventListener('mouseenter', function () {
-        var description = document.getElementById('myzen');
-        if (this == description) {
-            document.getElementById('zen').style.display = 'block';
-        }
-    })
-}
-
-/*
-console.log(Object.keys(document));
-*/
-
-/*
-var projects = document.querySelectorAll('#projects img');
-for (var i=0; i<projects.length; i++) {
-    projects[i].addEventListener('mouseenter', function () {
-    var description = this.getAttribute('data-');
-    console.log(description);
-    })
-}
-*/
-
-/*
-var projects = document.getElementById('projects');
-console.log(projects); //<ul></ul> and all li's in it with id's!!
-var gallery = projects.children;
-console.log(gallery); // [li, li, li]  an array - interesting
-var images = gallery.children; 
-console.log(images); // undefined
-
-var gallery1 = projects[1].getAttribute('data-');
-console.log(gallery1); // selectors
-
-*/
-
-/*
-var images = document.getElementsByTagName('img');
-console.log(images);
-var gallery = images[0];
-console.log(gallery);
-images[0].addEventListener('mouseenter', function() {
-    var description = this.getAttribute('data-');
-    console.log(description);
-})
-*/
-
-/*
-var projects = document.getElementById('projects');
-projects.addEventListener('mouseenter', function() {
-    console.log(projects.getAttribute('data-'));
-   })
- */   
-
-/*
-var projects = document.getElementById('projects');
-var gallery = projects.children;
-gallery.addEventListener('mouseenter', function() { //  not a function - because it's an array??
-    var description = this.getAttribute('data-');
-    console.log(description); 
-})
-*/
 
 
-console.log('hello\nkevin');
 

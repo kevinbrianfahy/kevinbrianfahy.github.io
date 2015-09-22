@@ -316,11 +316,15 @@ aside li a {
   font-weight: 900;
 }
 #projects {
+  width: 60%;
+  margin-top: 1.5%;
   text-align: center;
+  position: absolute;
+  left: 20%;
 }
 #projects li {
   display: inline-table;
-  margin: 10px;
+  margin: 10px 30px 10px 30px;
 }
 #projects img {
   height: 150px;
@@ -329,17 +333,21 @@ aside li a {
 #projects img:hover {
   box-shadow: 5px 3px 3px black;
   -webkit-transition: .75s;
+  -ms-transition: .75s;
   transition: .75s;
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
 }
 #zen, #selectors, #group {
   box-sizing: border-box;
   width: 80%;
- 
+  position: absolute;
+  right: -100vw;
   padding: 20px;
   display: none;
+  position: fixed;
+  top: 60%;
 }
 #zen p {
   font-size: 3vh;
