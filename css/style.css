@@ -281,8 +281,9 @@ border: 1px solid black;
 }
 aside {
   width: 15%;
-  height: 19.5%;
-  padding: 1.5%;
+  height: 21%;
+  padding: 1%;
+  font-size: .95em;
   background-image: url(../attachments/dark_embroidery/dark_embroidery.png);
   box-shadow: inset .2em .2em .8em .1em;
   position: absolute;
